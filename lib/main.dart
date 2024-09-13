@@ -19,6 +19,7 @@ Future<void> main() async {
   await GetStorage.init();
   final fcmToken = await FirebaseMessaging.instance.getToken(vapidKey: "1-0bo43bg_HQ01ymgFB4Xv4tzaSCk3TxY6JichNjnKM");
   print(fcmToken);
+  // initially just use this token, send backgrounded test notifications from firebase console
 // Initialize GetStorage
   Get.put(CartCountController());
   // setUrlStrategy(PathUrlStrategy());
