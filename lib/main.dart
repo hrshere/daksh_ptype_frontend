@@ -1,6 +1,7 @@
 
 import 'package:daksh_ptype/features/common/cart_count_controller.dart';
 import 'package:daksh_ptype/features/home/home_screen.dart';
+import 'package:daksh_ptype/features/notification/notification_service.dart';
 import 'package:daksh_ptype/page_routes/store_page_route.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,8 @@ Future<void> main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  NotificationService().requestPermissions();
+  NotificationService().listenToForeGroundMessages();//initially not display by default
   await GetStorage.init();
   final fcmToken = await FirebaseMessaging.instance.getToken(vapidKey: "1-0bo43bg_HQ01ymgFB4Xv4tzaSCk3TxY6JichNjnKM");
   print(fcmToken);
