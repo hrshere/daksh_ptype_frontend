@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "405847243905",
+    "project_id": "daksh-ptype",
+    "storage_bucket": "daksh-ptype.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405847243905:android:3df355b0c747283d7fa180",
+        "android_client_info": {
+          "package_name": "com.example.daksh_ptype"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJa-piNgCPkwXhs-YWV-IJYpAgmTctGMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
